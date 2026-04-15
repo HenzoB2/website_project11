@@ -6,7 +6,7 @@
     <title>Pollution - Environmental Awareness Platform</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* CSS Variables - Enhanced Theme */
+        
         :root {
             --primary: #0a0e17;
             --secondary: #131825;
@@ -27,7 +27,7 @@
             --glow: 0 0 20px rgba(52, 152, 219, 0.3);
         }
         
-        /* Reset & Base */
+
         * {
             margin: 0;
             padding: 0;
@@ -48,7 +48,6 @@
             line-height: 1.6;
         }
         
-        /* Particle Background */
         .particles {
             position: fixed;
             width: 100%;
@@ -73,7 +72,7 @@
             100% { transform: translateY(-100vh) translateX(100px); opacity: 0; }
         }
         
-        /* Header - Enhanced */
+
         .header {
             background: rgba(10, 14, 23, 0.9);
             backdrop-filter: blur(20px) saturate(180%);
@@ -115,7 +114,7 @@
             opacity: 0.8;
         }
         
-        /* User Profile - Enhanced */
+
         .user-profile {
             display: flex;
             align-items: center;
@@ -162,12 +161,12 @@
             color: transparent;
         }
         
-        /* Platform Navigation - REMOVED */
+
         .platform-nav {
             display: none;
         }
         
-        /* Hero Section - Enhanced */
+
         .hero {
             padding: 160px 40px 100px;
             position: relative;
@@ -354,7 +353,6 @@
             font-size: 22px;
         }
         
-        /* Information Sections - Enhanced */
         .info-sections {
             padding: 100px 40px;
             background: rgba(10, 14, 23, 0.8);
@@ -546,7 +544,7 @@
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
         }
         
-        /* Impact Section - New */
+
         .impact-section {
             padding: 100px 40px;
             background: rgba(19, 24, 37, 0.8);
@@ -584,7 +582,6 @@
             color: transparent;
         }
         
-        /* Review/Comment Section */
         .review-section {
             padding: 80px 40px;
             background: rgba(19, 24, 37, 0.8);
@@ -750,7 +747,6 @@
             border: 1px dashed rgba(255, 255, 255, 0.1);
         }
         
-        /* Footer - Enhanced */
         .footer {
             background: var(--secondary);
             padding: 80px 40px 40px;
@@ -865,7 +861,6 @@
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
         }
         
-        /* Back to Top Button */
         .back-to-top {
             position: fixed;
             bottom: 40px;
@@ -898,7 +893,6 @@
             box-shadow: 0 15px 35px rgba(52, 152, 219, 0.4);
         }
         
-        /* Scroll Indicator - Enhanced */
         .scroll-indicator {
             position: fixed;
             right: 30px;
@@ -958,7 +952,6 @@
             opacity: 1;
         }
         
-        /* Progress Bar */
         .progress-bar {
             position: fixed;
             top: 0;
@@ -970,7 +963,6 @@
             transition: width 0.3s ease;
         }
         
-        /* Responsive */
         @media (max-width: 1200px) {
             .main-title {
                 font-size: 56px;
@@ -1117,13 +1109,10 @@
     </style>
 </head>
 <body>
-    <!-- Particle Background -->
     <div class="particles" id="particles"></div>
     
-    <!-- Progress Bar -->
     <div class="progress-bar" id="progressBar"></div>
     
-    <!-- Scroll Indicator -->
     <div class="scroll-indicator" id="scrollIndicator">
         <div class="scroll-dot active" data-target="hero" data-label="Home"></div>
         <div class="scroll-dot" data-target="info1" data-label="Air Pollution"></div>
@@ -1132,12 +1121,10 @@
         <div class="scroll-dot" data-target="review" data-label="Reviews"></div>
     </div>
     
-    <!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop">
         <i class="fas fa-chevron-up"></i>
     </button>
     
-    <!-- Header -->
     <header class="header">
         <div class="logo">
             POLLUTION
@@ -1151,7 +1138,6 @@
         </div>
     </header>
     
-    <!-- Hero Section -->
     <section class="hero" id="hero">
         <div class="hero-bg"></div>
         <div class="hero-content">
@@ -1194,7 +1180,6 @@
         </div>
     </section>
     
-    <!-- Information Sections -->
     <div class="info-sections">
         <div class="section-header">
             <h2 class="section-title">Types of Pollution</h2>
@@ -1280,7 +1265,6 @@
         </section>
     </div>
     
-    <!-- Impact Section -->
     <div class="impact-section">
         <div class="section-header">
             <h2 class="section-title">Our Collective Impact</h2>
@@ -1312,7 +1296,6 @@
         </div>
     </div>
     
-    <!-- Review/Comment Section -->
     <section class="review-section" id="review">
         <div class="review-container">
             <div class="section-header">
@@ -1320,7 +1303,6 @@
                 <p class="section-subtitle">Your feedback helps us improve and inspires others to take action against pollution.</p>
             </div>
             
-            <!-- Review Form -->
             <div class="review-form">
                 <h3 style="color: var(--text); margin-bottom: 25px; font-size: 24px;">Leave a Review</h3>
                 
@@ -1354,12 +1336,10 @@
                 </form>
             </div>
             
-            <!-- Comments Display -->
             <div class="comments-section">
                 <h3 style="color: var(--text); margin-bottom: 30px; font-size: 24px;">Recent Reviews</h3>
                 
                 <div id="commentsContainer">
-                    <!-- Comments will be dynamically added here -->
                     <div class="no-comments" id="noComments">
                         <i class="fas fa-comments" style="font-size: 48px; margin-bottom: 20px; opacity: 0.5;"></i>
                         <h4>No reviews yet</h4>
@@ -1370,7 +1350,6 @@
         </div>
     </section>
     
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
@@ -1429,7 +1408,6 @@
     </footer>
     
     <script>
-        // Create particle background
         function createParticles() {
             const particles = document.getElementById('particles');
             const particleCount = 150;
@@ -1451,7 +1429,7 @@
                 particle.style.animationDuration = `${duration}s`;
                 particle.style.animationDelay = `${delay}s`;
                 
-                // Random color
+               
                 const colors = ['rgba(46, 204, 113, 0.3)', 'rgba(52, 152, 219, 0.3)', 'rgba(155, 89, 182, 0.3)'];
                 particle.style.background = colors[Math.floor(Math.random() * colors.length)];
                 
@@ -1459,7 +1437,6 @@
             }
         }
         
-        // Update progress bar
         function updateProgressBar() {
             const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -1467,7 +1444,6 @@
             document.getElementById('progressBar').style.width = scrolled + '%';
         }
         
-        // Show/hide back to top button
         function toggleBackToTop() {
             const backToTop = document.getElementById('backToTop');
             if (window.pageYOffset > 500) {
@@ -1477,7 +1453,7 @@
             }
         }
         
-        // Smooth scroll to section
+        
         function scrollToSection(sectionId) {
             const section = document.getElementById(sectionId);
             if (section) {
@@ -1491,7 +1467,6 @@
             }
         }
         
-        // Update scroll indicator
         function updateScrollIndicator() {
             const sections = ['hero', 'info1', 'info2', 'info3', 'review'];
             const scrollPosition = window.scrollY + 100;
@@ -1511,7 +1486,6 @@
                 }
             });
             
-            // Update indicator dots
             document.querySelectorAll('.scroll-dot').forEach(dot => {
                 dot.classList.remove('active');
                 if (dot.dataset.target === currentSection) {
@@ -1520,10 +1494,8 @@
             });
         }
         
-        // Comment System
         let comments = [];
         
-        // Load comments from localStorage
         function loadComments() {
             const savedComments = localStorage.getItem('pollutionComments');
             if (savedComments) {
@@ -1532,12 +1504,10 @@
             }
         }
         
-        // Save comments to localStorage
         function saveComments() {
             localStorage.setItem('pollutionComments', JSON.stringify(comments));
         }
         
-        // Display comments
         function displayComments() {
             const commentsContainer = document.getElementById('commentsContainer');
             const noComments = document.getElementById('noComments');
@@ -1550,12 +1520,10 @@
             noComments.style.display = 'none';
             commentsContainer.innerHTML = '';
             
-            // Display comments in reverse order (newest first)
             comments.slice().reverse().forEach(comment => {
                 const commentElement = document.createElement('div');
                 commentElement.className = 'comment';
                 
-                // Format date
                 const date = new Date(comment.date);
                 const formattedDate = date.toLocaleDateString('en-US', {
                     year: 'numeric',
@@ -1563,7 +1531,6 @@
                     day: 'numeric'
                 });
                 
-                // Create stars for rating
                 let stars = '';
                 for (let i = 1; i <= 5; i++) {
                     if (i <= comment.rating) {
@@ -1573,7 +1540,6 @@
                     }
                 }
                 
-                // Get initials for avatar
                 const initials = comment.name.split(' ').map(n => n[0]).join('').toUpperCase().substring(0, 2);
                 
                 commentElement.innerHTML = `
@@ -1598,22 +1564,18 @@
             });
         }
         
-        // Initialize
         document.addEventListener('DOMContentLoaded', function() {
             createParticles();
             loadComments();
             
-            // Scroll to info button
             document.getElementById('scrollToInfoBtn').addEventListener('click', () => {
                 scrollToSection('info1');
             });
             
-            // Scroll to review button
             document.getElementById('scrollToReviewBtn').addEventListener('click', () => {
                 scrollToSection('review');
             });
             
-            // Back to top button
             document.getElementById('backToTop').addEventListener('click', () => {
                 window.scrollTo({
                     top: 0,
@@ -1621,7 +1583,6 @@
                 });
             });
             
-            // Scroll indicator dots
             document.querySelectorAll('.scroll-dot').forEach(dot => {
                 dot.addEventListener('click', function() {
                     const targetSection = this.dataset.target;
@@ -1629,13 +1590,11 @@
                 });
             });
             
-            // Update progress bar and back to top on scroll
             window.addEventListener('scroll', function() {
                 updateProgressBar();
                 toggleBackToTop();
                 updateScrollIndicator();
                 
-                // Parallax effect
                 const scrolled = window.pageYOffset;
                 const heroBg = document.querySelector('.hero-bg');
                 if (heroBg) {
@@ -1643,12 +1602,10 @@
                 }
             });
             
-            // Initial updates
             updateProgressBar();
             toggleBackToTop();
             updateScrollIndicator();
             
-            // Add hover effects to info sections
             const infoSections = document.querySelectorAll('.info-section');
             infoSections.forEach(section => {
                 section.addEventListener('mouseenter', function() {
@@ -1660,7 +1617,6 @@
                 });
             });
             
-            // Add interactivity to topic tags
             const topicTags = document.querySelectorAll('.topic-tag');
             topicTags.forEach(tag => {
                 tag.addEventListener('click', function() {
@@ -1675,7 +1631,6 @@
                 });
             });
             
-            // Rating stars functionality
             const ratingStars = document.querySelectorAll('.rating-star');
             const ratingInput = document.getElementById('userRating');
             
@@ -1684,7 +1639,6 @@
                     const rating = this.getAttribute('data-rating');
                     ratingInput.value = rating;
                     
-                    // Update star display
                     ratingStars.forEach(s => {
                         if (s.getAttribute('data-rating') <= rating) {
                             s.classList.add('active');
@@ -1696,7 +1650,6 @@
                     });
                 });
                 
-                // Hover effect
                 star.addEventListener('mouseover', function() {
                     const rating = this.getAttribute('data-rating');
                     ratingStars.forEach(s => {
@@ -1720,7 +1673,6 @@
                 });
             });
             
-            // Comment form submission
             document.getElementById('commentForm').addEventListener('submit', function(e) {
                 e.preventDefault();
                 
@@ -1738,7 +1690,6 @@
                     return;
                 }
                 
-                // Create new comment
                 const newComment = {
                     id: Date.now(),
                     name: name,
@@ -1747,16 +1698,12 @@
                     date: new Date().toISOString()
                 };
                 
-                // Add to comments array
                 comments.push(newComment);
                 
-                // Save to localStorage
                 saveComments();
                 
-                // Update display
                 displayComments();
                 
-                // Reset form
                 this.reset();
                 ratingInput.value = 0;
                 ratingStars.forEach(s => {
@@ -1765,10 +1712,8 @@
                     s.style.color = '#555';
                 });
                 
-                // Show success message
                 alert('Thank you for your review! Your comment has been submitted.');
                 
-                // Scroll to comments
                 scrollToSection('review');
             });
         });
